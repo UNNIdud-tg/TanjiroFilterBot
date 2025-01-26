@@ -33,8 +33,8 @@ AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "")
+FIRSTDB_URI = environ.get('FIRSTDB_URI', "")
 SECONDDB_URI = environ.get('SECONDDB_URI', "")
-THIRDDB_URI = environ.get('THIRDDB_URI', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'demons')
 
