@@ -40,6 +40,8 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'demons')
 
 # Others
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
+MAX_B_TN = environ.get("MAX_B_TN", "5")
+MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'mrxsupports')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
