@@ -32,9 +32,9 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
-FIRSTDB_URI = environ.get('FIRSTDB_URI', "")
-SECONDDB_URI = environ.get('SECONDDB_URI', "")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://HARI_YT:HARI_YT@cluster0.m8x9vc0.mongodb.net/retryWrites=true&w=majority&appName=Cluster0")
+FIRSTDB_URI = environ.get('FIRSTDB_URI', "mongodb+srv://UNNIduo:UNNIduo@cluster0.xjkvzil.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+SECONDDB_URI = environ.get('SECONDDB_URI', "mongodb+srv://UNNI:UNNI@cluster0.7furehq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'demons')
 
